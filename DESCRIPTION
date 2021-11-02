@@ -1,0 +1,33 @@
+Package: pollinatorAttractiveness
+Version: 1.0.2
+Date: 2021-06-09
+License: GPL-3
+Title: Pollinator Attractiveness Analysis
+Authors@R: c(person("Jason","Mitchell",role=c("aut","cre"),email="jmitchell@west-inc.com"))
+Author: Jason Mitchell [aut]
+Maintainer: Jason Mitchell <jmitchell@west-inc.com>
+Description: Package build to analyze pollinator attractiveness data.
+Depends:
+  R (>= 3.4.0)
+Imports:
+  dplyr,
+  ggplot2,
+  grDevices,
+  lme4,
+  magrittr,
+  MASS,
+  multcomp,
+  purrr,
+  rlang,
+  stats,
+  tibble,
+  tidyr,
+  utils
+Suggests:
+  knitr,
+  rmarkdown
+LazyData: true
+URL: https://lar-git.west-inc.com/michigan-state-university/pollinatorAttractiveness
+BugReports: https://lar-git.west-inc.com/michigan-state-university/pollinatorAttractiveness/issues
+RoxygenNote: 7.1.1
+Encoding: UTF-8
