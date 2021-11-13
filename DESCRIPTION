@@ -1,11 +1,13 @@
 Package: pollinatorAttractiveness
-Version: 1.0.2
-Date: 2021-06-09
+Version: 1.0.3
+Date: 2021-11-13
 License: GPL-3
 Title: Pollinator Attractiveness Analysis
-Authors@R: c(person("Jason","Mitchell",role=c("aut","cre"),email="jmitchell@west-inc.com"))
+Authors@R: c(person("Jason","Mitchell",role=c("aut","cre"),email="jmitchell@west-inc.com"),
+             person("Jared","Studyvin",role=c("aut","ctb"),email="studyvin@uwyo.edu"),
+             person("Mandy","Kauffman",role=c("ctb"),email="mandy.kauffman@gmail.com"))
 Author: Jason Mitchell [aut]
-Maintainer: Jason Mitchell <jmitchell@west-inc.com>
+Maintainer: Jared Studyvin <studyvin@uwyo.edu>
 Description: Package build to analyze pollinator attractiveness data.
 Depends:
   R (>= 3.4.0)
@@ -27,7 +29,7 @@ Suggests:
   knitr,
   rmarkdown
 LazyData: true
-URL: https://lar-git.west-inc.com/michigan-state-university/pollinatorAttractiveness
-BugReports: https://lar-git.west-inc.com/michigan-state-university/pollinatorAttractiveness/issues
+URL: https://github.com/studyvin/pollinatorAttractiveness
+BugReports: https://github.com/studyvin/pollinatorAttractiveness/issues
 RoxygenNote: 7.1.1
 Encoding: UTF-8

@@ -186,9 +186,9 @@ anoDev <- function(df,ft,annuals=TRUE,blocks=TRUE){
         dplyr::summarize(`Pollinator Visits` = mean(.data$TotalPollinatorVisits/.data$SamplingPeriods),
                          Syrphidae = mean(.data$TotalSyrphidae/.data$SamplingPeriods),
                          `Apis Mellifera` = mean(.data$TotalApisMellifera/.data$SamplingPeriods),
-                         `Bombus Impatiens` = mean(.data$TotalBombusImpatiens/.data$SamplingPeriods),
-                         `Other Diptera`	= mean(.data$TotalOtherDiptera/.data$SamplingPeriods),
-                         `Other Hymenoptera` = mean(.data$TotalOtherHymenoptera/.data$SamplingPeriods)) %>%
+                         `Bombus Impatiens` = mean(.data$TotalBombusImpatiens/.data$SamplingPeriods)) %>%
+                         # `Other Diptera`	= mean(.data$TotalOtherDiptera/.data$SamplingPeriods),
+                         # `Other Hymenoptera` = mean(.data$TotalOtherHymenoptera/.data$SamplingPeriods)) %>%
                          ##`Other Bees` = mean(.data$TotalOtherBees/.data$SamplingPeriods),
                          ##Wasps = mean(.data$TotalWasps/.data$SamplingPeriods)) %>%
         dplyr::arrange(dplyr::desc(.data$`Pollinator Visits`)) %>%
@@ -215,9 +215,9 @@ anoDev <- function(df,ft,annuals=TRUE,blocks=TRUE){
       dplyr::summarize(`Pollinator Visits` = mean(.data$TotalPollinatorVisits/.data$SamplingPeriods),
                        Syrphidae = mean(.data$TotalSyrphidae/.data$SamplingPeriods),
                        `Apis Mellifera` = mean(.data$TotalApisMellifera/.data$SamplingPeriods),
-                       `Bombus Impatiens` = mean(.data$TotalBombusImpatiens/.data$SamplingPeriods),
-                       `Other Diptera`	= mean(.data$TotalOtherDiptera/.data$SamplingPeriods),
-                         `Other Hymenoptera` = mean(.data$TotalOtherHymenoptera/.data$SamplingPeriods)) %>%
+                       `Bombus Impatiens` = mean(.data$TotalBombusImpatiens/.data$SamplingPeriods)) %>%
+                       # `Other Diptera`	= mean(.data$TotalOtherDiptera/.data$SamplingPeriods),
+                       # `Other Hymenoptera` = mean(.data$TotalOtherHymenoptera/.data$SamplingPeriods)) %>%
                        ## `Other Bees` = mean(.data$TotalOtherBees/.data$SamplingPeriods),
                        ## Wasps = mean(.data$TotalWasps/.data$SamplingPeriods)) %>%
       dplyr::arrange(dplyr::desc(.data$`Pollinator Visits`)) %>%
